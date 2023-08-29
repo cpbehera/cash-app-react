@@ -1,0 +1,132 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.downloadbuttons{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.downloadbuttons button{
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 7px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
+}
+.downloadbuttons button img{
+    margin-right: 10px;
+}
+.privacy-policy{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+.privacy-policy .description{
+    width: 400px;
+}
+.privacy-policy .description p{
+    font-size: 10px;
+}
+.privacy-policy .social img{
+    margin: 0 8px;
+}
+
+/* media query */
+@media(max-width:991px) and (min-width:768px){
+    footer {
+        flex-direction: column;
+    }
+    .downloadbuttons {
+        width: 100%;
+        justify-content: center;
+        gap: 40px;
+    }
+    .downloadbuttons button {
+        padding: 6px 13px;
+    }
+    .privacy-policy {
+        width: 100%;
+    }
+    .privacy-policy .description {
+        width: 450px;
+    }
+    .privacy-policy .description p {
+        font-size: 9px;
+        text-align: justify;
+    }
+}
+@media(max-width:600px){
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .downloadbuttons {
+        width: 100%;
+        justify-content: center;
+    }
+    .downloadbuttons button {
+        padding: 5px 10px;
+    }
+    .privacy-policy {
+        width: 100%;
+    }
+    .privacy-policy .arrow{
+        position: absolute;
+        bottom: 160px;
+        width: 17px;
+    }
+    .privacy-policy .description{
+        width: 300px;
+    }
+    .privacy-policy .description p {
+        font-size: 7px;
+        text-align: justify;
+    }
+    .privacy-policy .social img {
+        width: 15px;
+        margin: 0 5px;
+    }
+}
+
+@media(max-width:475px){
+    .privacy-policy .arrow {
+        position: absolute;
+        bottom: 140px;
+    }
+    .privacy-policy .description {
+        width: 240px;
+    }
+}
+@media(max-width:320px){
+    .downloadbuttons button {
+        padding: 4px 8px;
+    }
+    .downloadbuttons button span{
+        font-size: 14px;
+    }
+    .downloadbuttons button img {
+        margin-right: 8px;
+        width: 16px;
+    }
+    .privacy-policy .arrow {
+        bottom: 155px;
+        width: 16px;
+    }
+    .privacy-policy .description {
+        width: 200px;
+    }
+   
+}
